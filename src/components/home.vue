@@ -3,7 +3,7 @@
 	<div class="content">
 		<photo-box></photo-box>
 		<div>
-			<homePage v-bind:box="box" v-for="box in boxs"></homePage>	
+			<home-page v-bind:box="box" v-for="box in boxs"></home-page>
 		</div>
 	</div>  
 </div>

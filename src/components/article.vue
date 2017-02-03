@@ -30,6 +30,9 @@ export default {
 			}
 		}
 	},
+	created () {
+		this.fetchData();
+	},
 	watch: {
 	    '$route.query.menu2Id': 'fetchData'
 	},

@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import nav from './home/nav.vue'
-import footer from './home/footer.vue'
-import photo from './home/photo.vue'
+import nav from './components/nav.vue'
+import footer from './components/footer.vue'
+import photo from './components/photo.vue'
 
 export default {
 	components: {

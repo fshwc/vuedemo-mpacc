@@ -10,20 +10,20 @@ Vue.use(Vuex)
 import store from './state'
 
 const Home = resolve => {
-	require.ensure(['./home/index.vue'],() => {
-		resolve(require('./home/index.vue'))
+	require.ensure(['./components/home.vue'],() => {
+		resolve(require('./components/home.vue'))
 	})
 }
 
 const Details = resolve => {
-	require.ensure(['./article/index.vue'],() => {
-		resolve(require('./article/index.vue'))
+	require.ensure(['./components/articlePage.vue'],() => {
+		resolve(require('./components/articlePage.vue'))
 	})
 }
 
 const Article = resolve => {
-	require.ensure(['./article/article.vue'],() => {
-		resolve(require('./article/article.vue'))
+	require.ensure(['./components/article.vue'],() => {
+		resolve(require('./components/article.vue'))
 	})
 }
 
