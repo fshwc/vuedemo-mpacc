@@ -26,7 +26,7 @@ export default {
 				{id:5, name: '案例研究'},
 				{id:6, name: '联合会'},
 				{id:7, name: '校友天地'},
-				{id:8, name: '联系我们'}
+				{id:8, name: '后台管理入口'}
 			],
 			chose: 0
 		}
@@ -40,7 +40,9 @@ export default {
 		changeChose (id) {
 			this.chose = id;
 			if(id==0) {
-				this.$router.push('/');
+				this.$router.push('/mpacc');
+			}else if(id == 8) {
+				this.$router.push('/backstage');
 			}else {
 				this.$router.push({ name: 'details', params: { id: id },query: { menu2Id: 0 }});
 			}
